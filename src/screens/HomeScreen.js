@@ -3,13 +3,14 @@ import { TYPE_CONTAINER_ITEM_UNDEFINED } from '@bloomreach/spa-sdk';
 import axios from 'axios';
 import React from 'react';
 import { Button, StyleSheet, View } from 'react-native';
+
 import ComponentInfoCard from '../components/ComponentInfoCard';
 import TitleAndText from '../components/TitleAndText';
 
 const HomeScreen = ({ navigation }) => {
   const configuration = {
     endpoint:
-      'https://sandbox-sales07.bloomreach.io/delivery/site/v1/channels/brxsaas/pages',
+      'https://developers.bloomreach.io/delivery/site/v1/channels/brxsaas/pages',
     httpClient: axios,
     path: '/',
     debug: true,
